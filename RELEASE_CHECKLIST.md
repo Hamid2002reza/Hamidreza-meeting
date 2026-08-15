@@ -1,0 +1,24 @@
+# Hamidreza Meeting V11 Release Checklist
+
+- [ ] Android Studio stable + JDK 17
+- [ ] Gradle sync successful
+- [ ] `assembleDebug` successful
+- [ ] Release keystore created outside repository
+- [ ] Release signing values supplied through `~/.gradle/gradle.properties` or CI secrets
+- [ ] `assembleRelease` successful
+- [ ] `apksigner verify --verbose app-release.apk`
+- [ ] Test install/update on POCO X4 5G
+- [ ] Test microphone permission
+- [ ] Test Persian Speech-to-Text
+- [ ] Test long meeting segmentation
+- [ ] Test transcript encryption/decryption
+- [ ] Test biometric/PIN
+- [ ] Test Word export/share
+- [ ] Test Reminder/Notification
+- [ ] Test HTTPS Backend + invalid certificate/HTTP rejection
+- [ ] Test Backend unauthorized request = 401
+- [ ] Test missing AI key = 503
+- [ ] Test transcript > limit = 422
+- [ ] Confirm no API keys or secrets in APK/repository
+- [ ] Confirm no raw transcript in logs
+- [ ] Privacy/retention policy approved
